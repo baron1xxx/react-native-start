@@ -1,22 +1,18 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import {Navbar} from "./src/Navbar.tsx";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello React Native</Text>
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <Navbar title='Todo App'/>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-    fontSize: 28
-  }
+    container: {},
+    text: {
+        color: '#fff',
+        fontSize: 24
+    }
 });
